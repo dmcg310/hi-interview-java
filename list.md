@@ -4,7 +4,7 @@
   It defines attributes (fields) and behaviors (methods) of an object.
 - **Object:** An instance of a class.
 
-```
+```java
 class Dog {
     // attributes
     String breed;
@@ -27,7 +27,7 @@ Dog myDog = new Dog();
 - This is typically achieved using private variables and public getter
   and setter methods.
 
-```
+```java
 class Circle {
     private double radius;
 
@@ -58,7 +58,7 @@ class Circle {
 - Promotes reusability and establishes a relationship between the
   parent and child class.
 
-```
+```java
 class Animal {
     void eat() {
         System.out.println("This animal eats food.");
@@ -84,7 +84,7 @@ d.bark();
 - **Method Overriding**: Child class provides a specific implementation
   of a method that is already defined in its parent class.
 
-```
+```java
 // Method Overloading
 class Calculator {
     int add(int a, int b) {
@@ -117,7 +117,7 @@ class Dog extends Animal {
   necessary features of an object.
 - Achieved using abstract classes and interfaces.
 
-```
+```java
 abstract class Shape {
     abstract double getArea();  // abstract method
 }
@@ -137,7 +137,7 @@ class Circle extends Shape {
 - **Aggregation**: A specialized form of association, represents a "whole-part" relationship. E.g., Department and Teacher, where a Department can exist without a Teacher.
 - **Composition**: A strong type of aggregation. The child cannot exist independently of the parent. E.g., Human and Heart.
 
-```
+```java
 class Engine { }
 
 class Car {
