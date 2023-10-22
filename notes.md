@@ -26,7 +26,7 @@
   Method belongs to the class and can be called without creating an
   instance of the class.
 
-### `abstact`
+### `abstract`
 
 - A method declared without an implementation (no braces). Subclasses
   inheriting an abstact class must provide an implementation for its
