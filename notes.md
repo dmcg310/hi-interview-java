@@ -139,3 +139,72 @@ treeMap.put(1, "One");
 treeMap.put(2, "Two");
 System.out.println(treeMap); // 1=One, 2=Two, 3=Three sorted by key
 ```
+
+### `FileInputStream`
+
+- An input stream for reading bytes from a file. It is used to read
+  byte-oriented data.
+
+```java
+FileInputStream fis = new FileInputStream("file.txt");
+
+int i;
+while ((i = fis.read()) != -1) {
+    System.out.print((char) i);
+}
+
+fis.close();
+```
+
+### `FileOutputStream`
+
+- An output stream for writing bytes to a file. It is used to write
+  byte-oriented data;
+
+```java
+String data = "Hello, World!";
+
+FileOutputStream fos = new FileOutputStream("file.txt");
+fos.write(data.getBytes());
+fos.close();
+```
+
+### `FileReader`
+
+- Used for reading character files.
+
+### `FileWriter`
+
+- Used for writing charcter files.
+
+```java
+FileWriter fw = new FileWriter("file.txt");
+fw.write("Hello, World!");
+fw.close();
+```
+
+### `BufferedReader`
+
+- Reads text from a charcter-input stream, buffering characters
+  to provide efficient reading of characters, arrays, and lines.
+
+```java
+String line;
+
+BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+while ((line = br.readLine()) != null) {
+    System.out.println(line);
+}
+br.close();
+```
+
+### `BufferedWriter`
+
+- Writes text to a character-output stream, buffering characters
+  to provide efficient writing of single characters, arrays, and strings.
+
+```java
+BufferedWriter bw = new BufferedWriter(new FileWriter("filename.txt"));
+bw.write("Hello, World!");
+bw.close();
+```
