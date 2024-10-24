@@ -1,7 +1,3 @@
-### Company Values
-
-- (Curious) Outside of formal education, I have self-taught various technologies...
-
 ### Encapsulation
 
 - Wrapping data (attributes) and code (methods) as a single unit.
